@@ -1,0 +1,130 @@
+.header-top__container {
+  padding-top: 35px;
+  padding-bottom: 40px;
+  @media (max-width: 768px){
+  max-width: 840px;
+}
+  @media (max-width: 576px) {
+  max-width: 750px;
+}
+}
+.logon{
+  @media (max-width: 768px) {
+    margin: 0 auto;
+  }
+}
+.header {
+    background-color: $white;
+    nav {
+      padding-top: 15px;
+    }
+}
+
+.header__nav_menu {
+  @extend %for-ul;
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  font: {
+    family: 'GothamProMedium';
+    size: 15px;
+  }
+  color: $black;
+  line-height: 15px;
+  @media (max-width: 768px){
+    display: flex;
+    justify-content: center;
+  }
+  @media (max-width: 414px){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  &_menu-li{
+    @media (max-width: 414px){
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+  }
+}
+
+.header__nav_menu_menu-li {
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  @extend %for-a;
+  @media (max-width: 1199px) {
+    margin-left: 10px;
+    margin-right: 10px;;
+  }
+  @media (max-width: 991px) {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  @media (max-width: 482px) {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}    
+
+.header__nav_menu_menu-li:hover {
+  .submenu {
+    display: block;
+  }
+}
+
+.choice {    
+  display: block;
+}
+  
+.submenu {
+  @extend %for-ul;
+  display: none;
+  position: absolute;
+  width: 120px;
+  top: 15px;
+  padding-left: 0;
+  background-color: white;
+  text-align: center;
+}
+
+.submenu-li {
+  display: block;
+  @extend %for-a;
+  border-bottom: 1px solid $grey-light;
+}
+
+.submenu-a {      
+  display: block;
+  padding: 10px;
+  color: white;
+  background-color: $white;
+  text-decoration: none;
+}
+
+.header__btn {
+  @extend %for-a;
+  display: flex;
+  .header__btn_buttons {
+    @extend %for-buttons;
+    @media (max-width: 1199px) {
+      padding: 12px 20px;
+    }
+    @media (max-width: 991px) {
+      padding: 8px 6px;
+    }
+    @media (max-width: 767px) {
+      padding: 10px 15px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  }
+}
+
+
+

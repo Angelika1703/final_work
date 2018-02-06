@@ -1,0 +1,24 @@
+.main {
+   background-image: url("../img/otsec1_bg.jpg");
+   background-size: cover;
+}
+
+.net-page__container {
+  padding-top: 75px;
+  padding-bottom: 80px;
+}
+
+.net-page__text {
+  &_main {
+    @extend %for-p;
+    font-weight: $medium-plus;
+  }
+  &_topic {
+    @extend %for-h1;
+    font-weight: $light;
+    padding-bottom: 20px;
+  }
+}
+
+
+

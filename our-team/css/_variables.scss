@@ -1,0 +1,97 @@
+
+
+html, body {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.container {
+  padding-right: 50px;
+  padding-left: 50px;
+
+}
+
+.clearfix::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+%for-a {
+	a {		
+		color: $black;
+	    text-decoration: none;
+	}
+  a:hover {
+        color: $black;
+        text-decoration: none;
+  }
+}
+
+%for-p {
+	font:{
+        family: 'GothamProRegular';
+        size: 16px;
+  }
+    line-height: 30px;
+}
+
+span {
+    font-size: 30px;	
+	font-style: italic;
+	color: $white; 
+}
+
+%for-h1 {
+	font:{
+     family: 'FjallaOneRegular';
+	   size: 70px;
+	   weight: $extrabold;
+    }
+}
+
+%for-h2 {
+	font:{
+      family: 'FjallaOneRegular';
+	    size: 41px;
+	    weight: $extrabold;
+    }
+    line-height: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: $black;
+}
+
+%for-h3 {
+	font:{
+     family: 'FjallaOneRegular';
+	   size: 25px;	
+	   weight: $bold;
+    }
+    line-height: 25px;
+    margin-bottom: 0;
+    margin-top: 0;
+  color: $black;
+}
+
+%for-buttons {
+	font:{
+      family: 'FjallaOneRegular';
+	    size: 16px;
+	}
+  text-transform: uppercase;
+  color: $white;
+  padding: 12px 30px;
+  background-color: $activ-botton;
+  margin-bottom: 0;
+}
+
+%for-ul {
+  ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+}
+
+
