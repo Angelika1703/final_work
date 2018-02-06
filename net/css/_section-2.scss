@@ -1,0 +1,35 @@
+.second{
+  padding-top: 100px;
+  padding-bottom: 40px;
+  &__leftRight{
+
+    &-head{
+      @extend %for-h2;
+      padding-bottom: 40px;
+    }
+    &-descr{
+      @extend %for-p;
+      font-weight: 600;
+    }
+  }
+}
+.second__container_buttons-vertical {
+  position: absolute;
+  right: -60px;
+  transform: rotate(-90deg);
+  @extend %for-a;
+  @extend %for-buttons;
+  color: $white;
+  background-color: $activ-botton;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &:hover {
+    color: $white;
+    background-color: $activ-botton-opacity;
+    text-decoration: none;
+  }
+  .icon-forma {
+    transform: rotate(90deg);
+  }
+}

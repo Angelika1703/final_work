@@ -1,0 +1,11 @@
+.fourth{
+  padding-bottom: 115px;
+  &__head{
+    @extend %for-h2;
+    padding-bottom: 40px;
+  }
+  &__descr{
+    @extend %for-p;
+    font-weight: 600;
+  }
+}

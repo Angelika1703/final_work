@@ -1,0 +1,334 @@
+@font-face {
+  font-family: 'FjallaOneRegular';
+  src: url("../fonts/FjallaOne-Regular.ttf");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: 'GothamProRegular';
+  src: url("../fonts/GothamProRegular.ttf");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: 'GothamProMedium';
+  src: url("../fonts/GothamProMedium.ttf");
+  font-style: normal;
+  font-weight: 500; }
+html, body {
+  font-family: 'Fjalla One', sans-serif; }
+
+.container {
+  padding-right: 50px;
+  padding-left: 50px; }
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both; }
+
+.header__nav_menu_menu-li a, .submenu-li a, .header__btn a, .second__container_buttons-vertical a {
+  color: #000;
+  text-decoration: none; }
+.header__nav_menu_menu-li a:hover, .submenu-li a:hover, .header__btn a:hover, .second__container_buttons-vertical a:hover {
+  color: #000;
+  text-decoration: none; }
+
+.net-page__text_main, .second__leftRight-descr, .fourth__descr, .fifth__advantages-descr, .fifth__text-descr {
+  font-family: 'GothamProRegular';
+  font-size: 16px;
+  line-height: 30px; }
+
+span {
+  font-size: 30px;
+  font-style: italic;
+  color: #FFFFFF; }
+
+.net-page__text_topic {
+  font-family: 'FjallaOneRegular';
+  font-size: 70px;
+  font-weight: 800; }
+
+.second__leftRight-head, .fourth__head, .fifth__text-head {
+  font-family: 'FjallaOneRegular';
+  font-size: 41px;
+  font-weight: 800;
+  line-height: 50px;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #000; }
+
+.header__btn .header__btn_buttons, .second__container_buttons-vertical {
+  font-family: 'FjallaOneRegular';
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 12px 30px;
+  background-color: #0070ed;
+  margin-bottom: 0; }
+
+.header__nav_menu ul:after, .submenu ul:after {
+  display: block;
+  content: ' ';
+  clear: both;
+  float: none; }
+
+.header-top__container {
+  padding-top: 35px;
+  padding-bottom: 40px; }
+  @media (max-width: 768px) {
+    .header-top__container {
+      max-width: 840px; } }
+  @media (max-width: 576px) {
+    .header-top__container {
+      max-width: 750px; } }
+
+@media (max-width: 768px) {
+  .logon {
+    margin: 0 auto; } }
+
+.header {
+  background-color: #FFFFFF; }
+  .header nav {
+    padding-top: 15px; }
+
+.header__nav_menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  font-family: 'GothamProMedium';
+  font-size: 15px;
+  color: #000;
+  line-height: 15px; }
+  @media (max-width: 768px) {
+    .header__nav_menu {
+      display: flex;
+      justify-content: center; } }
+  @media (max-width: 414px) {
+    .header__nav_menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 10px;
+      padding-top: 10px; } }
+  @media (max-width: 414px) {
+    .header__nav_menu_menu-li {
+      padding-bottom: 10px;
+      padding-top: 10px; } }
+
+.header__nav_menu_menu-li {
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative; }
+  @media (max-width: 1199px) {
+    .header__nav_menu_menu-li {
+      margin-left: 10px;
+      margin-right: 10px; } }
+  @media (max-width: 991px) {
+    .header__nav_menu_menu-li {
+      margin-left: 5px;
+      margin-right: 5px; } }
+  @media (max-width: 482px) {
+    .header__nav_menu_menu-li {
+      margin-left: 5px;
+      margin-right: 5px; } }
+
+.header__nav_menu_menu-li:hover .submenu {
+  display: block; }
+
+.choice {
+  display: block; }
+
+.submenu {
+  display: none;
+  position: absolute;
+  width: 120px;
+  top: 15px;
+  padding-left: 0;
+  background-color: white;
+  text-align: center; }
+
+.submenu-li {
+  display: block;
+  border-bottom: 1px solid #dedddd; }
+
+.submenu-a {
+  display: block;
+  padding: 10px;
+  color: white;
+  background-color: #FFFFFF;
+  text-decoration: none; }
+
+.header__btn {
+  display: flex; }
+  @media (max-width: 1199px) {
+    .header__btn .header__btn_buttons {
+      padding: 12px 20px; } }
+  @media (max-width: 991px) {
+    .header__btn .header__btn_buttons {
+      padding: 8px 6px; } }
+  @media (max-width: 767px) {
+    .header__btn .header__btn_buttons {
+      padding: 10px 15px;
+      margin: 0 auto;
+      margin-top: 20px; } }
+
+.main {
+  background-image: url("../img/net_bg1.jpg");
+  background-size: cover; }
+
+.net-page__container {
+  padding-top: 75px;
+  padding-bottom: 80px; }
+
+.net-page__text_main {
+  font-weight: 600; }
+.net-page__text_topic {
+  font-weight: 300;
+  padding-bottom: 20px; }
+
+.second {
+  padding-top: 100px;
+  padding-bottom: 40px; }
+  .second__leftRight-head {
+    padding-bottom: 40px; }
+  .second__leftRight-descr {
+    font-weight: 600; }
+
+.second__container_buttons-vertical {
+  position: absolute;
+  right: -60px;
+  transform: rotate(-90deg);
+  color: #FFFFFF;
+  background-color: #0070ed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .second__container_buttons-vertical:hover {
+    color: #FFFFFF;
+    background-color: rgba(0, 112, 237, 0.6);
+    text-decoration: none; }
+  .second__container_buttons-vertical .icon-forma {
+    transform: rotate(90deg); }
+
+.slider {
+  padding-bottom: 90px; }
+  .slider__container {
+    padding-left: 0;
+    padding-right: 0; }
+
+.fourth {
+  padding-bottom: 115px; }
+  .fourth__head {
+    padding-bottom: 40px; }
+  .fourth__descr {
+    font-weight: 600; }
+
+.fifth {
+  padding-bottom: 100px; }
+  .fifth__advantages {
+    max-width: 97%;
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    padding: 15px 0px 15px 30px;
+    border-radius: 4px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 15px 25px rgba(163, 174, 186, 0.1);
+    -moz-box-shadow: 0 15px 25px rgba(163, 174, 186, 0.1);
+    box-shadow: 0 15px 25px rgba(163, 174, 186, 0.1); }
+    .fifth__advantages-img {
+      font-size: 30px; }
+    .fifth__advantages:hover {
+      background-color: #0070ed;
+      color: #fff !important;
+      text-decoration: none; }
+    .fifth__advantages-descr {
+      margin-bottom: 0;
+      font-weight: 600; }
+  .fifth__text-head {
+    padding-bottom: 40px; }
+  .fifth__text-descr {
+    font-weight: 600;
+    padding-bottom: 50px; }
+
+.advantages {
+  padding: 3px 10px; }
+
+.sixth {
+  background-color: #151c26;
+  font-size: 25px; }
+  .sixth__icon-link {
+    padding-right: 5px;
+    padding-left: 5px; }
+  .sixth__icon-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 40px; }
+  .sixth__text {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px; }
+    .sixth__text-link {
+      font-family: 'GothamProMedium';
+      font-size: 14px;
+      padding-left: 20px;
+      padding-right: 20px; }
+      @media (max-width: 768px) {
+        .sixth__text-link {
+          padding-left: 0;
+          padding-right: 0; } }
+      @media (max-width: 768px) {
+        .sixth__text-link {
+          padding-left: 10px;
+          padding-right: 10px; } }
+      @media (max-width: 414px) {
+        .sixth__text-link {
+          padding-left: 10px;
+          padding-right: 10px; } }
+      .sixth__text-link:hover {
+        text-decoration: none; }
+    .sixth__text-row {
+      justify-content: center; }
+  .sixth__copy {
+    padding-bottom: 70px; }
+    .sixth__copy-text {
+      font-family: 'FjallaOneRegular';
+      font-size: 14px;
+      color: #303a49; }
+    .sixth__copy-line {
+      margin: 0 auto;
+      width: 60px;
+      height: 2px;
+      background-color: #303a49; }
+
+.fab {
+  vertical-align: center; }
+
+.circle {
+  display: table-cell;
+  vertical-align: middle;
+  width: 46px;
+  height: 46px;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  border-radius: 23px;
+  background-color: #202836; }
+
+/* -------- fonts -------- */
+/* -------- colors -------- */
+/* -------- variables -------- */
+/* -------- header -------- */
+/* -------- section-1 -------- */
+/* -------- section-2 -------- */
+/* -------- section-3 -------- */
+/* -------- section-4 -------- */
+/* -------- section-5 -------- */
+/* -------- section-6 -------- */
+/* -------- footer -------- */
+
+/*# sourceMappingURL=style.css.map */
