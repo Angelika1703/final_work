@@ -16,6 +16,7 @@
 .second__container_buttons-vertical {
   position: absolute;
   right: -60px;
+  top: 650px;
   transform: rotate(-90deg);
   @extend %for-a;
   @extend %for-buttons;

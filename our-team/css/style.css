@@ -199,6 +199,7 @@ span {
 .second__container_buttons-vertical {
   position: absolute;
   right: -60px;
+  top: 650px;
   transform: rotate(-90deg);
   color: #FFFFFF;
   background-color: #0070ed;
@@ -220,6 +221,11 @@ span {
 
 .fourth {
   padding-bottom: 100px; }
+  .fourth__container {
+    box-sizing: content-box; }
+    @media (max-width: 414px) {
+      .fourth__container {
+        box-sizing: border-box; } }
   .fourth__text-head {
     padding-bottom: 40px; }
   .fourth__text-descr {
@@ -230,11 +236,20 @@ span {
     align-items: center;
     color: #000;
     text-decoration: none; }
+    @media (max-width: 517px) {
+      .fourth__team {
+        justify-content: center; } }
     .fourth__team-img {
       font-size: 30px; }
     .fourth__team-descr {
       margin-bottom: 0;
       font-weight: 600; }
+    @media (max-width: 517px) {
+      .fourth__team-text {
+        text-align: center; } }
+    @media (max-width: 517px) {
+      .fourth__team-text-icons {
+        justify-content: center; } }
     .fourth__team-text-head {
       font-size: 19px;
       margin-bottom: 5px; }
@@ -249,7 +264,15 @@ span {
   font-family: 'GothamProMedium'; }
 
 .row__first {
-  padding-bottom: 70px; }
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .row__first::after, .row__first ::before {
+    box-sizing: content-box; }
+  @media (max-width: 768px) {
+    .row__first {
+      padding-bottom: 0; } }
 
 .fifth {
   background-color: #151c26;
