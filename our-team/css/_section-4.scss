@@ -48,6 +48,7 @@
       &-icons{
         @media (max-width: 992px) and (min-width: 768px){
           padding-left: 0!important;
+          justify-content: center!important;
         }
         @media (max-width: 517px) {
           justify-content: center;
@@ -79,7 +80,7 @@
   @media (max-width: 992px) and (min-width: 768px){
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 }
 
