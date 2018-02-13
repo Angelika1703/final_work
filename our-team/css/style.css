@@ -19,6 +19,10 @@ html, body {
 .container {
   padding-right: 50px;
   padding-left: 50px; }
+  @media (max-width: 1024px) {
+    .container {
+      padding-right: 30px;
+      padding-left: 30px; } }
 
 .clearfix::after {
   display: block;
@@ -236,6 +240,10 @@ span {
     align-items: center;
     color: #000;
     text-decoration: none; }
+    @media (max-width: 992px) and (min-width: 768px) {
+      .fourth__team {
+        padding-left: 10px;
+        padding-right: 10px; } }
     @media (max-width: 517px) {
       .fourth__team {
         justify-content: center; } }
@@ -244,9 +252,16 @@ span {
     .fourth__team-descr {
       margin-bottom: 0;
       font-weight: 600; }
+    @media (max-width: 992px) and (min-width: 768px) {
+      .fourth__team-text {
+        text-align: center;
+        padding-left: 0 !important; } }
     @media (max-width: 517px) {
       .fourth__team-text {
         text-align: center; } }
+    @media (max-width: 992px) and (min-width: 768px) {
+      .fourth__team-text-icons {
+        padding-left: 0 !important; } }
     @media (max-width: 517px) {
       .fourth__team-text-icons {
         justify-content: center; } }
@@ -262,17 +277,15 @@ span {
 
 .team {
   font-family: 'GothamProMedium'; }
+  @media (max-width: 992px) and (min-width: 768px) {
+    .team {
+      box-sizing: content-box; } }
 
-.row__first {
-  padding-bottom: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-  .row__first::after, .row__first ::before {
-    box-sizing: content-box; }
-  @media (max-width: 768px) {
-    .row__first {
-      padding-bottom: 0; } }
+@media (max-width: 992px) and (min-width: 768px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; } }
 
 .fifth {
   background-color: #151c26;

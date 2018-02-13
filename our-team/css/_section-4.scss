@@ -2,7 +2,6 @@
   padding-bottom: 100px;
   &__container{
     box-sizing: content-box;
-
     @media (max-width: 414px) {
       box-sizing: border-box;
     }
@@ -19,6 +18,10 @@
     }
   }
   &__team{
+    @media (max-width: 992px) and (min-width: 768px){
+      padding-left: 10px;
+      padding-right: 10px;
+    }
     display: flex;
     align-items: center;
     color: #000;
@@ -35,10 +38,17 @@
       font-weight: 600;
     }
     &-text{
+      @media (max-width: 992px) and (min-width: 768px){
+        text-align: center;
+        padding-left: 0!important;
+      }
       @media (max-width: 517px) {
         text-align: center;
       }
       &-icons{
+        @media (max-width: 992px) and (min-width: 768px){
+          padding-left: 0!important;
+        }
         @media (max-width: 517px) {
           justify-content: center;
         }
@@ -61,22 +71,15 @@
 }
 .team{
   font-family: 'GothamProMedium';
+  @media (max-width: 992px) and (min-width: 768px){
+    box-sizing: content-box;
+  }
 }
 .row{
-  &__first{
-    &::after, ::before {
-      box-sizing: content-box;
-    }
-    padding-bottom: 50px;
+  @media (max-width: 992px) and (min-width: 768px){
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    @media (max-width: 768px) {
-      padding-bottom: 0;
-    }
-  }
-  &__second{
-
+    justify-content: space-evenly;
   }
 }
 
